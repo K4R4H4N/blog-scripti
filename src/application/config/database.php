@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'bdnblog',
+	'hostname' => 'buraya veritabanı sunucunuzun adı',
+	'username' => 'buraya veritabanı kullanıcı adınız',
+	'password' => 'buraya veritabanı şifreniz',
+	'database' => 'buraya veritabanı adınız',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
