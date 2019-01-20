@@ -12,6 +12,7 @@
 <link href="<?php echo base_url("assets/a/vendor/font-awesome/css/font-awesome.min.css"); ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url("assets/a/vendor/datatables/dataTables.bootstrap4.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/a/css/sb-admin.css"); ?>" rel="stylesheet">
+<link href="<?php echo base_url("assets/css/sweetalert2.min.css"); ?>" rel="stylesheet">
 </head>
 <body class="fixed-nav sticky-footer bg-dark sidenav-toggled" id="page-top">
 <?php $this->load->view("admin/menu");?>
@@ -23,12 +24,6 @@
 </li>
 <li class="breadcrumb-item active">Yorumlar</li>
 </ol>
-<?php $alert = $this->session->userdata("alert");
-if($alert){ ?>
-<div class="alert alert-<?php echo $alert["type"]; ?>">
-<strong><?php echo $alert["title"]; ?></strong> <?php echo $alert["message"]; ?>  
-</div>
-<?php } ?>
 <div class="card mb-3">
 <div class="card-header">
 <i class="fa fa-comments"></i> Yorumlar</div>
@@ -89,4 +84,6 @@ if($alert){ ?>
 <script src="<?php echo base_url("assets/a/vendor/datatables/dataTables.bootstrap4.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin-datatables.min.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
+<?php $this->load->view("admin/alert"); ?>
 </html>

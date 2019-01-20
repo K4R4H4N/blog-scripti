@@ -38,6 +38,7 @@ $yazi_icerik_v2 = $metin;
 <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/css/blg.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/css/font-awesome.min.css"); ?>" rel="stylesheet">
+<link href="<?php echo base_url("assets/css/sweetalert2.min.css"); ?>" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -56,14 +57,6 @@ $yazi_icerik_v2 = $metin;
 <div class="container">
 <div class="row">
 <div class="col-lg-8">
-<?php $alert = $this->session->userdata("alert");
-if($alert){ ?>
-<hr>
-<div class="alert alert-<?php echo $alert["type"]; ?>">
-<strong><?php echo $alert["title"]; ?></strong> <?php echo $alert["message"]; ?>
-</div>
-<hr>
-<?php } ?>
 <h1 class="mt-4"><?php echo $yazi_icerik->yazi_baslik; ?></h1>
 <hr>
 <p><strong><?php echo strip_tags($yazi_icerik->uye_ad_soyad); ?></strong> tarafından, <a href="<?php echo base_url("kategori/".strip_tags($yazi_icerik->kategori_url)); ?>"><?php echo strip_tags($yazi_icerik->kategori_adi); ?></a> kategorisinde <?php $tarih = $yazi_icerik->createdAt; echo $this->fonksiyonlar->timeConvert($tarih); ?> paylaşıldı. <strong style="float:right;"><a href="#" data-toggle="modal" data-target="#paylas<?php echo $yazi_icerik->id; ?>"><i data-toggle="tooltip" data-placement="top" title="Sosyal Medyada Paylaş" class="fa fa-share-alt-square"></i></a></strong>
@@ -206,5 +199,7 @@ $(function () {
 $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
+<?php $this->load->view("admin/alert"); ?>
 </body>
 </html>

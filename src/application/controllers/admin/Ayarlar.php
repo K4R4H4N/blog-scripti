@@ -53,15 +53,15 @@ class Ayarlar extends CI_Controller {
             
             $alert = array(
                 "title" => "İşlem Başarılıdır",
-                "message" => "Güncelleme işlemi başarılıdır...",
+                "text" => "Güncelleme işlemi başarılıdır...",
                 "type" => "success"
             );
         }
         else{
             $alert = array(
                 "title" => "İşlem Başarısızdır!!",
-                "message" => "Güncelleme işlemi başarısızdır...",
-                "type" => "danger"
+                "text" => "Güncelleme işlemi başarısızdır...",
+                "type" => "error"
             );
         }
         

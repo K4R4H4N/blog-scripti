@@ -10,17 +10,12 @@
 <link href="<?php echo base_url("assets/a/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/a/vendor/font-awesome/css/font-awesome.min.css"); ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url("assets/a/css/sb-admin.css"); ?>" rel="stylesheet">
+<link href="<?php echo base_url("assets/css/sweetalert2.min.css"); ?>" rel="stylesheet">
 </head>
 <body class="bg-dark">
 <div class="container">
 <div class="card card-login mx-auto mt-5">
 <div class="card-header">Giriş yap</div>
-<?php $alert = $this->session->userdata("alert");
-if($alert){ ?>
-<div class="alert alert-<?php echo $alert["type"]; ?>">
-<strong><?php echo $alert["title"]; ?></strong> <?php echo $alert["message"]; ?>
-</div>
-<?php } ?>
 <div class="card-body">
 <form action="<?php echo base_url("admin/giris"); ?>" method="post">
 <div class="form-group">
@@ -39,5 +34,7 @@ if($alert){ ?>
 <script src="<?php echo base_url("assets/a/vendor/jquery/jquery.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/vendor/bootstrap/js/bootstrap.bundle.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/vendor/jquery-easing/jquery.easing.min.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
+<?php $this->load->view("admin/alert"); ?>
 </body>
 </html>

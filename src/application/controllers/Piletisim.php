@@ -45,15 +45,15 @@ class Piletisim extends Genel_MY_Controller {
             if($insert){
                 $alert = array(
                     "title" => "",
-                    "message" => "Mesajınız başarıyla gönderilmiştir, vermiş olduğunuz email adresi üzerinden iletişime geçilecektir...",
+                    "text" => "Mesajınız başarıyla gönderilmiştir, vermiş olduğunuz email adresi üzerinden iletişime geçilecektir...",
                     "type" => "success"
                 );
             }
             else{
                 $alert = array(
                     "title" => "",
-                    "message" => "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz...",
-                    "type" => "danger"
+                    "text" => "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz...",
+                    "type" => "error"
                 );
             }
 
@@ -61,8 +61,8 @@ class Piletisim extends Genel_MY_Controller {
 
             $alert = array(
                 "title" => "",
-                "message" => "Lütfen boş alan bırakmayınız.",
-                "type" => "danger"
+                "text" => "Lütfen boş alan bırakmayınız.",
+                "type" => "error"
             );
         }
 

@@ -47,8 +47,8 @@ class Admin extends CI_Controller {
 
             $alert = array(
                 "title"     => "İşlem Başarısız",
-                "message"   => "Lütfen Tüm alanları eksiksiz olarak doldurunuz.!!!",
-                "type"      => "danger"
+                "text"   => "Lütfen Tüm alanları eksiksiz olarak doldurunuz.!!!",
+                "type"      => "error"
             );
 
 
@@ -81,8 +81,8 @@ class Admin extends CI_Controller {
 
                     $alert = array(
                         "title"     => "İşlem Başarısız",
-                        "message"   => "Böyle bir kullanıcı bulunamadı!!!",
-                        "type"      => "danger"
+                        "text"   => "Böyle bir kullanıcı bulunamadı!!!",
+                        "type"      => "error"
                     );
 
                 }

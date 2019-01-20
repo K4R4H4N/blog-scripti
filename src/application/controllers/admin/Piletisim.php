@@ -61,15 +61,15 @@ public function delete($id){
 
         $alert = array(
             "title" => "İşlem Başarılıdır!!",
-            "message" => "Silme işlemi başarılıdır...",
+            "text" => "Silme işlemi başarılıdır...",
             "type" => "success"
         );
     }else {
 
         $alert = array(
             "title" => "İşlem Başarısızdır!!",
-            "message" => "Silme işlemi başarısızdır...",
-            "type" => "danger"
+            "text" => "Silme işlemi başarısızdır...",
+            "type" => "error"
         );
     }
 

@@ -12,6 +12,7 @@
 <link href="<?php echo base_url("assets/a/vendor/font-awesome/css/font-awesome.min.css"); ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo base_url("assets/a/vendor/datatables/dataTables.bootstrap4.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/a/css/sb-admin.css"); ?>" rel="stylesheet">
+<link href="<?php echo base_url("assets/css/sweetalert2.min.css"); ?>" rel="stylesheet">
 </head>
 <body class="fixed-nav sticky-footer bg-dark sidenav-toggled" id="page-top">
 <?php $this->load->view("admin/menu");?>
@@ -129,5 +130,5 @@
 <script src="<?php echo base_url("assets/a/vendor/datatables/dataTables.bootstrap4.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin-datatables.min.js"); ?>"></script>
-
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
 </html>

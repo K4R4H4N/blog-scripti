@@ -60,23 +60,23 @@ class Sayfalar extends CI_Controller {
             if($insert){
             $alert = array(
                 "title" => "İşlem Başarılıdır",
-                "message" => "Ekleme işlemi başarılıdır...",
+                "text" => "Ekleme işlemi başarılıdır...",
                 "type" => "success"
             );
             }
             else{
             $alert = array(
                 "title" => "İşlem Başarısızdır!!",
-                "message" => "Ekleme işlemi başarısızdır...",
-                "type" => "danger"
+                "text" => "Ekleme işlemi başarısızdır...",
+                "type" => "error"
             );
             } 
         }else{
             
             $alert = array(
                 "title" => "İşlem Başarısızdır!!",
-                "message" => "Lütfen boş alan bırakmayınız...",
-                "type" => "danger"
+                "text" => "Lütfen boş alan bırakmayınız...",
+                "type" => "error"
             );
         }
         
@@ -136,15 +136,15 @@ class Sayfalar extends CI_Controller {
             
             $alert = array(
                 "title" => "İşlem Başarılıdır",
-                "message" => "Güncelleme işlemi başarılıdır...",
+                "text" => "Güncelleme işlemi başarılıdır...",
                 "type" => "success"
             );
         }
         else{
             $alert = array(
                 "title" => "İşlem Başarısızdır!!",
-                "message" => "Güncelleme işlemi başarısızdır...",
-                "type" => "danger"
+                "text" => "Güncelleme işlemi başarısızdır...",
+                "type" => "error"
             );
         }
         
@@ -164,15 +164,15 @@ class Sayfalar extends CI_Controller {
             
             $alert = array(
                 "title" => "İşlem Başarılıdır!!",
-                "message" => "Silme işlemi başarılıdır...",
+                "text" => "Silme işlemi başarılıdır...",
                 "type" => "success"
             );
         }else {
             
             $alert = array(
                 "title" => "İşlem Başarısızdır!!",
-                "message" => "Silme işlemi başarısızdır...",
-                "type" => "danger"
+                "text" => "Silme işlemi başarısızdır...",
+                "type" => "error"
             );
         }
         

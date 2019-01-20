@@ -75,6 +75,8 @@
 <script src="<?php echo base_url("assets/a/vendor/datatables/dataTables.bootstrap4.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin.js"); ?>"></script>
 <script src="<?php echo base_url("assets/a/js/sb-admin-datatables.min.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
+<?php $this->load->view("admin/alert"); ?>
 <script src="<?php echo base_url("assets/plugins/ckeditor/ckeditor.js"); ?>"></script>
 <script>
 CKEDITOR.replace('sayfa_icerik', {

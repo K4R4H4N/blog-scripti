@@ -28,6 +28,7 @@
 <link href="<?php echo base_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/css/blg.css"); ?>" rel="stylesheet">
 <link href="<?php echo base_url("assets/css/font-awesome.min.css"); ?>" rel="stylesheet">
+<link href="<?php echo base_url("assets/css/sweetalert2.min.css"); ?>" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -45,12 +46,6 @@
 </nav>
 <div class="container">
 <br>
-<?php $alert = $this->session->userdata("alert");
-if($alert){ ?>
-<div class="alert alert-<?php echo $alert["type"]; ?>">
-<strong><?php echo $alert["title"]; ?></strong> <?php echo $alert["message"]; ?>
-</div>
-<?php } ?>
 <div class="row">
 <div class="col-md-12">
 <div class="card mb-4">
@@ -90,5 +85,7 @@ if($alert){ ?>
 </footer>
 <script src="<?php echo base_url("assets/vendor/jquery/jquery.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/vendor/bootstrap/js/bootstrap.bundle.min.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/sweetalert2.all.js"); ?>"></script>
+<?php $this->load->view("admin/alert"); ?>
 </body>
 </html>

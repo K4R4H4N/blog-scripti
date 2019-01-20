@@ -90,23 +90,23 @@ class Anasayfa extends Genel_MY_Controller {
             if($insert){
                 $alert = array(
                     "title" => "",
-                    "message" => "Yorum ekleme işlemi başarılıdır, yorumunuzun görünmesi için yönetici onayı gereklidir.",
+                    "text" => "Yorum ekleme işlemi başarılıdır, yorumunuzun görünmesi için yönetici onayı gereklidir.",
                     "type" => "success"
                 );
             }
             else{
                 $alert = array(
                     "title" => "",
-                    "message" => "Yorum ekleme işlemi başarısızdır, lütfen tekrar deneyin.",
-                    "type" => "danger"
+                    "text" => "Yorum ekleme işlemi başarısızdır, lütfen tekrar deneyin.",
+                    "type" => "error"
                 );
             }
         }else{
 
             $alert = array(
                 "title" => "",
-                "message" => "Lütfen boş alan bırakmayınız...",
-                "type" => "danger"
+                "text" => "Lütfen boş alan bırakmayınız...",
+                "type" => "error"
             );
         }
 
