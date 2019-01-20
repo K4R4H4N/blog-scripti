@@ -13,7 +13,7 @@ Merhaba arkadaşlar, sizlere codeigniter ile yazmış olduğum blog scriptini ü
 # Açıklama
 Kişisel blog sitesi açmak isteyenlere tamamen açık kaynak kodlu uygun bir scripttir. Anasayfa kısmında StartBootstrap tarafından ücretsiz yayınlanan "Blog Home" ve "Blog Post" kullanılmıştır. Admin paneli kısmında StartBootstrap tarafından ücretsiz yayınlanan "SB Admin" kullanılmıştır. Kullanımı son derece basit ve kolaydır. Anasayfada gösterilecek olan yazıların sayısını "Genel Ayarlar" kısmından "Anasayfada görünecek olan yazı sayısı" bölümünü doldurmaları yeterlidir.
 
-# Yönetim paneli bilgileri (demo panel bilgileri için bu adresten iletişime geçebilirsiniz: https://desponres.ml/iletisim)
+# Yönetim paneli bilgileri (demo panel bilgileri için bu adresten iletişime geçebilirsiniz: http://desponres.ml/iletisim)
 website.com/admin
 Kullanıcı adı: admin@admin.com
 Şifre: 123456789
@@ -36,6 +36,6 @@ bu alana scriptin kurulu olduğu dizini yazın.
   
   bu alanları kendinize göre doldurunuz.
   
-  # Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ve https://desponres.ml/iletisim adresinden ulaşabilirsiniz.
+  # Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ve http://desponres.ml/iletisim adresinden ulaşabilirsiniz.
   
   Not: Bu script tamamen açık kaynak ve ücretsizdir. Kendinize göre düzenleyebilirsiniz.
