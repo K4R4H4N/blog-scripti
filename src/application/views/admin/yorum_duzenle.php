@@ -28,7 +28,7 @@
 <i class="fa fa-list"></i> Yorum Düzenle</div>
 <div class="card-body">
 <form action="<?php echo base_url("admin/yorumlar/duzenle/update/$yorumlar->id"); ?>" method="post">
-<input type="hidden" name="itiraf_id" value="<?php echo $yorumlar->yazi_id; ?>">
+<input type="hidden" name="yazi_id" value="<?php echo $yorumlar->yazi_id; ?>">
 <input type="hidden" name="id" value="<?php echo $yorumlar->id; ?>">
 <div class="form-group">
 <label for="yorum_ad_soyad">Rumuz</label>
