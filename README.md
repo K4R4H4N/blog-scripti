@@ -36,6 +36,11 @@ bu alana scriptin kurulu olduğu dizini yazın.
   
   bu alanları kendinize göre doldurunuz.
   
+# Kurulum Videosu (Kurulum adımları itiraf scripti ile aynı olduğu için ekstra olarak kurulum videosu çekmedim) #
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=vCHJIBJN6PY
+" target="_blank"><img src="http://img.youtube.com/vi/vCHJIBJN6PY/0.jpg" 
+alt="Blog Scripti Kurulumu" width="240" height="180" border="10" /></a>
+  
   # Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ve http://desponres.ml/iletisim adresinden ulaşabilirsiniz.
   
   Not: Bu script tamamen açık kaynak ve ücretsizdir. Kendinize göre düzenleyebilirsiniz.
