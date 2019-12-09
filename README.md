@@ -19,6 +19,10 @@ Kullanıcı adı: admin@admin.com
 Şifre: 123456789
 (Bu bilgileri daha sonra yönetim panelinden değiştirebilirsiniz.)
 
+# Eklenen ve Değiştirilen Kısımlar #
+--Veritabanı yapısı değiştirildi.
+--Veritabanı optimizasyonu yapıldı.
+
 # Kurulum
 ->application->config->config.php = bu dizindeki dosyanın içerisinde;
 

@@ -5,7 +5,7 @@ class Piletisim_model extends CI_Model {
 
     public function insert($data){
 
-        $insert = $this->db->insert("brkdndr_iletisim", $data);
+        $insert = $this->db->insert("iletisim", $data);
         return $insert;
 
     }

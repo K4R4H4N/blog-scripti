@@ -18,7 +18,7 @@ class Etiketler_model extends CI_Model {
                     'createdAt' => date("Y-m-d H:i:s")
                 );
                 //etiket ekle
-                $this->db->insert('brkdndr_etiketler', $data);
+                $this->db->insert('etiketler', $data);
             }
         }
     }
@@ -39,7 +39,7 @@ class Etiketler_model extends CI_Model {
                     'updatedAt' => date("Y-m-d H:i:s")
                 );
                 //insert tag
-                $this->db->insert('brkdndr_etiketler', $data);
+                $this->db->insert('etiketler', $data);
             }
         }
     }
@@ -47,13 +47,13 @@ class Etiketler_model extends CI_Model {
     public function etiket_getir($etiket_url)
     {
         $this->db->where('etiket_url', $etiket_url);
-        $query = $this->db->get('brkdndr_etiketler');
+        $query = $this->db->get('etiketler');
         return $query->row();
     }
 
     public function yazi_etiketleri($yazi_id){
         $this->db->where('yazi_id', $yazi_id);
-        $query = $this->db->get('brkdndr_etiketler');
+        $query = $this->db->get('etiketler');
         return $query->result();
     }
     public function yazi_etiket_sil($yazi_id){
@@ -63,7 +63,7 @@ class Etiketler_model extends CI_Model {
         foreach ($etikets as $etiket) {
             //sil
             $this->db->where('id', $etiket->id);
-            $this->db->delete('brkdndr_etiketler');
+            $this->db->delete('etiketler');
         }
     }
 
