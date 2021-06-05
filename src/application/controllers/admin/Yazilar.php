@@ -71,7 +71,7 @@ public function update($id){
     if($img){
 
         $config["upload_path"]   = "uploads/";
-        $config["allowed_types"] = "gif|jpg|png";
+        $config["allowed_types"] = "gif|jpg|jpeg|png";
 
         $this->load->library("upload", $config);
 
@@ -184,7 +184,7 @@ public function insert(){
             if($img){
 
             $config["upload_path"]   = "uploads/";
-            $config["allowed_types"] = "gif|jpg|png";
+            $config["allowed_types"] = "gif|jpg|jpeg|png";
 
             $this->load->library("upload", $config);
 
